@@ -1,13 +1,17 @@
-let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
-// people.forEach(function(person) {
-//     console.log(person);
+var array = [8, 2, 3, 4, 5];
+
+// var result = array.forEach(function (val, index) {
+//     console.log(index, val + 55);
 // });
 
-const logPerson = (person, index) => {
-    console.log(`${index} - hello ${person}`);
-};
-
-people.forEach(logPerson);
-
-
+var result2 = array.map(
+    function (val, index) {
+        if (val == 4) {
+            console.log(val + 55);
+        }
+        else {
+            console.log(val, index);
+        }
+    }
+)
 
