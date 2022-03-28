@@ -29,11 +29,11 @@
 //     return total;
 // }
 
-const bill = (products, tax) => {
+const bill = (okok, tax) => {
     let total = 0;
-    for (let i = 0; i < products.length; i++)
+    for (let i = 0; i < okok.length; i++)
     {
-        total += products[i] + products[i]*tax;
+        total += okok[i] + okok[i]*tax;
     }
     return total;
 };
